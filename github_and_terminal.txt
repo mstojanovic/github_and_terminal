@@ -1,0 +1,24 @@
+//Replace DIRNAME, USERNAME and REPONAME with your local folder name, username on github and repository name.
+//curl will prompt for github password
+
+$ mkdir DIRNAME
+$ cd DIRNAME
+$ git init
+$ touch README.md
+$ curl -u 'USERNAME' https://api.github.com/user/repos -d '{"name":"REPONAME"}'
+$ git add README.md
+$ git commit -m 'first commit'
+$ git remote add origin git@github.com:USERNAME/REPONAME.git
+$ git push -u origin master
+
+//1. create local directory
+//2. enter local directory
+//3. set directory as git repo
+//4. make a (empty) README.md file
+//5. create a repository named REPONAME on github
+//6. add README.md to git
+//7. commit all the added files with the message in '...'
+//8. create remote git content at address git@git... named origin
+//9. push master (local) branch to origin (remote)
+
+
