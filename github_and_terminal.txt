@@ -21,4 +21,5 @@ $ git push -u origin master
 //8. create remote git content at address git@git... named origin
 //9. push master (local) branch to origin (remote)
 
+//if it gives error messages try setting the SSLvalidation to true i the blobal .gitconfig file, enter the command: git config --global http.sslVerify true
 
