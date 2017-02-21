@@ -5,7 +5,7 @@ $ mkdir DIRNAME
 $ cd DIRNAME
 $ git init
 $ touch README.md
-$ curl -u 'USERNAME' https://api.github.com/user/repos -d '{"name":"REPONAME"}'
+$ curl -u 'USERNAME:TOKEN' https://api.github.com/user/repos -d '{"name":"REPONAME"}'
 $ git add README.md
 $ git commit -m 'first commit'
 $ git remote add origin git@github.com:USERNAME/REPONAME.git
@@ -21,5 +21,5 @@ $ git push -u origin master
 //8. create remote git content at address git@git... named origin
 //9. push master (local) branch to origin (remote)
 
+//TOKEN must be obtained from github in Settings -> Personal access token
 //if it gives error messages try setting the SSLvalidation to true i the blobal .gitconfig file, enter the command: git config --global http.sslVerify true
-
